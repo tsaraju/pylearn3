@@ -1,4 +1,4 @@
-class acc:
+class BankAccount:
     #Bank Name
     bank_name = "AXIS"
     total_bank_accs = 0
@@ -8,7 +8,7 @@ class acc:
         self.accno = accno
         self.bal = bal
 
-        acc.total_bank_accs += 1
+        BankAccount.total_bank_accs += 1
 
     # Depositing money
     def deposit(self, amount):
@@ -17,12 +17,12 @@ class acc:
 
     # Withdrawing money
     def withdraw(self, amount):
-        if amount < self.bal:
+        if amount > self.bal:
+            print("Insufficient balance to withdraw")
+        else:
             self.bal -= amount
             print(f"Amount {amount} withdrawn, Total balance is {self.bal}")
-        else:
-            print("Insufficient balance to withdraw")
-
+            
     # Checking balance
     def check_balance(self):
         print("Current Balance is :", self.bal)
@@ -36,11 +36,11 @@ class acc:
 
     @classmethod
     def change_bank(cls, new_bank):
-        acc.bank_name = new_bank
+        BankAccount.bank_name = new_bank
 
-ac1 = acc("Raju", 2546532221566, 20000)
-ac2 = acc("Rani", 2546532428569, 30000)
-ac3 = acc("Rama", 2546532528007, 25000)
+ac1 = BankAccount("Raju", 2546532221566, 20000)
+ac2 = BankAccount("Rani", 2546532428569, 30000)
+ac3 = BankAccount("Rama", 2546532528007, 25000)
 
 ac1.display_account_details()
 ac1.deposit(10000)
@@ -53,15 +53,15 @@ ac2.withdraw(2000)
 ac2.check_balance()
 # Change bank name
 ac2.change_bank("ICICI")
-print("Bank Account name : ", acc.bank_name)
+print("Bank Account name : ", BankAccount.bank_name)
 
 ac3.display_account_details()
 ac3.deposit(10000)
-ac3.withdraw(1000)
+ac3.withdraw(10000)
 ac3.check_balance()
 # Change bank name
 ac3.change_bank("YES")
-print("Bank Account name : ", acc.bank_name)
+print("Bank Account name : ", BankAccount.bank_name)
 
 # Dispay the total bank accounts
-print("Total bank accounts: ", acc.total_bank_accs)
+print("Total bank accounts: ", BankAccount.total_bank_accs)
