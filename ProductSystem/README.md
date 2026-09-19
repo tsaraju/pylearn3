@@ -5,6 +5,7 @@ Create a static method
 Product.is_valid_price(price)
 It should return True if the price is greater than zero and False otherwise.
 Create at least 5 different products and demonstrate buying/updating stock.
+
 Sample Input:
 p1 = Product(1, "Mobile", 10000, "Gadgets", 5)
 p2 = Product(2, "Tablet", 30000, "Gadgets", 4)
