@@ -1,5 +1,5 @@
+E-Commerce Product System
 Create a Product class for a small e-commerce application.
-
 Every product should have product ID, name, price, category, and stock quantity. Implement methods such as display_product(), update_stock() and calculate_total_price(quantity).
 Create a static method
 Product.is_valid_price(price)
