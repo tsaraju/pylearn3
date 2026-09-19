@@ -28,5 +28,5 @@ d1.display_details()
 d2 = Developer("Rani", 35650, 40000, 'ML', 'Python', 4)
 d2.display_details()
 
-d1 = Developer("Ramu", 49558, 25000, 'DL', 'Python', 3)
-d1.display_details()
+d3 = Developer("Ramu", 49558, 25000, 'DL', 'Python', 3)
+d3.display_details()
