@@ -54,7 +54,7 @@ pc3 = PremiumCourse("Devops", "Raju", "6 months", 30000, 'yes', 'yes')
 pc3.show_course_details()
 pc3.calculate_discount()
 
-pc4 = PremiumCourse("Python", "Raju", "6 months", 30000, 'yes', 'yes')
+pc4 = PremiumCourse("Python", "Raju", "6 months", 20000)
 pc4.show_course_details()
 pc4.calculate_discount()
 
