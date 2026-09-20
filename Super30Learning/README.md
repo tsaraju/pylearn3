@@ -55,35 +55,53 @@ m2 = Mentor(
 )
 
 Sample Output:
+
 Raju has been assigned to mentor Dr. Ramu.
 Rani has been assigned to mentor Dr. Ramu.
 Rani has been assigned to mentor Dr. Ravi.
 
---- Student Information ---
+--- Student 1 Information ---
 User Information
 User name: Raju
 User email: raju@gmail.com
 User userID: S101
 Student course_name: Python Programming
-Student completed_assignments: 5
+Student completed_assignments: 2
+
+--- Student 2 Information ---
+User Information
+User name: Rani
+User email: rani123@gmail.com
+User userID: S102
+Student course_name: Data Science
+Student completed_assignments: 3
 
 --- Assign Course ---
 Raju has been assigned to Advanced Python.
 
 --- Submit Assignment ---
-Raju submitted an assignment. Total completed: 6
+Raju submitted an assignment. Total completed by Raju: 3
 
---- Updated Student Information ---
+--- Updated Student 1 Information ---
 User Information
 User name: Raju
 User email: raju@gmail.com
 User userID: S101
 Student course_name: Advanced Python
-Student completed_assignments: 5
+Student completed_assignments: 3
 
---- Total number of assignments ---
+--- Student 2 Information ---
+User Information
+User name: Rani
+User email: rani123@gmail.com
+User userID: S102
+Student course_name: Data Science
+Student completed_assignments: 3
 
---- Mentor Information ---
+--- Total Number of Assignments ---
+Total assignments submitted by all students: 1
+
+--- Mentor 1 Information ---
 User Information
 User name: Dr. Ramu
 User email: ramu@gmail.com
@@ -94,7 +112,7 @@ Students:
   - Raju
   - Rani
 
---- Mentor Information ---
+--- Mentor 2 Information ---
 User Information
 User name: Dr. Ravi
 User email: ravi@gmail.com
@@ -105,8 +123,8 @@ Students:
   - Rani
 
 --- Course Validation ---
-True
-False
+Valid course: True
+Valid course: False
 
 --- Total Users ---
 Total users: 4
