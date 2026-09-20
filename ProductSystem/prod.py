@@ -20,7 +20,7 @@ class Product:
 
     def update_stock(self, quantity):
         if quantity <= self.stock_quantity:
-            Product.cart[self.pname] = self.price * quantity
+            Product.cart[self.pname] = self.calculate_total_price(quantity)
             self.stock_quantity -= quantity
             print(f"Added {quantity} {self.pname}(s) to cart. Remaining stock: {self.stock_quantity}")
         else:
