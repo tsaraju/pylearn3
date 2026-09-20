@@ -22,11 +22,11 @@ class Developer(Employee):
         print(f"Programming Languages: {self.proglan}")
         print(f"Experience: {self.exp}")
         
-d1 = Developer("Raju", 45652, 30000, 'Devops', 'Python', 5)
+d1 = Developer(45652, "Raju", 30000, 'Devops', 'Python', 5)
 d1.display_details()
 
-d2 = Developer("Rani", 35650, 40000, 'ML', 'Python', 4)
+d2 = Developer(35650, "Rani", 40000, 'ML', 'Python', 4)
 d2.display_details()
 
-d3 = Developer("Ramu", 49558, 25000, 'DL', 'Python', 3)
+d3 = Developer(49558, "Ramu", 25000, 'DL', 'Python', 3)
 d3.display_details()
